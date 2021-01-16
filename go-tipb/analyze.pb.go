@@ -52,7 +52,7 @@
 		Executor
 		ExchangeSender
 		ExchangeReceiver
-		OneTripIndexLookUp
+		OneTripIndexLookup
 		TableScan
 		Join
 		IndexScan

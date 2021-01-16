@@ -176,6 +176,7 @@ enum ExecType {
 	TypeExchangeSender = 9;
 	TypeExchangeReceiver = 10;
 	TypeProjection = 11;
+	TypeOneTripIndexLookup = 12;
 }
 
 // It represents a Executor.
@@ -193,6 +194,7 @@ message Executor {
 	optional Kill kill = 11;
 	optional ExchangeSender exchange_sender = 12;
 	optional Projection Projection = 13;
+	optional OneTripIndexLookup one_trip_idx_lookup = 14;
 }
 
 enum ExchangeType {
@@ -221,7 +223,7 @@ enum EngineType {
 	TiFlash = 2;
 }
 
-message OneTripIndexLookUp {
+message OneTripIndexLookup {
 	required DAGRequest idx_scan = 1;
 	required DAGRequest tbl_scan = 2;
 }
